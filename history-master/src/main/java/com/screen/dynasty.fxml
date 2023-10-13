@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test3.DynastyCotroller">
+    <children>
+        <Label layoutX="374.0" layoutY="8.0" text="DYSNATY" textFill="#bc5858">
+            <font>
+                <Font name="Times New Roman Bold Italic" size="23.0" />
+            </font>
+        </Label>
+        <TableView fx:id="dynastyTable" layoutY="41.0" prefHeight="387.0" prefWidth="846.0">
+            <columns>
+                <TableColumn fx:id="nhanVatColumn" prefWidth="75.0" text="Nhân vật liên quan" />
+                <TableColumn fx:id="donViTienTeColumn" prefWidth="75.0" text="Đơn vị tiền tệ " />
+                <TableColumn fx:id="tonGiaoColumn" prefWidth="75.0" text="Tôn giáo" />
+                <TableColumn fx:id="suKienLienQuanColumn" prefWidth="75.0" text="Sự kiện liên quan" />
+                <TableColumn fx:id="batDauColumn" prefWidth="75.0" text="Bắt đầu" />
+                <TableColumn fx:id="thuDoColumn" prefWidth="75.0" text="Thủ đô" />
+                <TableColumn fx:id="ngonNguColumn" prefWidth="75.0" text="Ngôn Ngữ" />
+                <TableColumn fx:id="viTheColumn" prefWidth="75.0" text="Vị thế" />
+                <TableColumn fx:id="ketThucColumn" prefWidth="75.0" text="Kết thúc" />
+                <TableColumn fx:id="quocGiaColumn" prefWidth="75.0" text="Quốc gia" />
+                <TableColumn fx:id="trieuDaiColumn" prefWidth="91.33331298828125" text="Triều đại" />
+            </columns>
+        </TableView>
+        <Button layoutX="662.0" layoutY="429.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="25.0" prefWidth="83.0" text="BACK" textAlignment="CENTER" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+        <TextField fx:id="filterFieldDysnaty" layoutY="429.0" prefHeight="31.0" prefWidth="360.0" promptText="Search..." />
+    </children>
+</AnchorPane>
+
